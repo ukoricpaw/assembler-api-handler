@@ -2,6 +2,8 @@
 
 The goal of this project is to make a GET request to a specified URL using assembly language and obtain the response in a text document, which is then displayed in the browser.
 
+This project works with ***Movie Database***.
+
 ---
 
 The program is written in **MASM** and takes a _URL_ link as input from the user. It uses the **WinInet** library to make a GET request to the specified _URL_ and writes the response to a text document.
@@ -35,3 +37,5 @@ To run the project, execute the following commands:
 - `node index.js`  for the server
 
 Alternatively, run the `start.bat` script which will start both the client and the server, and open the browser to http://localhost:5173/.
+
+**If you want a complete working project, you can unzip the assembler-api-handler.zip file.**
