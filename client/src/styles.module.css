@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ownContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movieItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.movieList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.moviesContainer {
+  width: 1300px;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  cursor: pointer;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  width: 30px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  color: white;
+  background-color: #2aa65c;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform .5s;
+}
+
+.star:hover {
+  transform: rotate(360deg);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.contentWrapper {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  height: 50px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+
+select {
+  width: 100%;
+  border: none;
+  background-color: rgb(128, 149, 241);
+  padding: 10px;
+  color: white;
+  border-radius: 15px;
+  outline: none;
+}
+
+option {
+  border: none;
+  padding: 10px;
+}
+
+input {
+  padding: 18px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  .moviesContainer {
+    width: 1023px;
+  }
+
+  .movieList {
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+  }
+
+  .OwnTitle {
+    text-align: center;
+  }
+
+  .imageContainer {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .moviesContainer {
+    width: 766px;
+  }
+
+  .movieList {
+    grid-template-columns: 1fr;
+    margin: 50px;
+  }
+
+  .OwnTitle {
+    text-align: center;
+  }
+
+  .imageContainer {
+    width: 90%;
+    height: 480px;
+  }
+
+  .newForm {
+    flex-direction: column;
+  }
+
+}
+
+
+.newForm {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 100px;
+  align-items: center;
+}
+
+.formWrapper h1 {
+  text-align: center;
+}
