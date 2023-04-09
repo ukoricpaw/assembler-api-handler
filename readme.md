@@ -38,4 +38,4 @@ To run the project, execute the following commands:
 
 Alternatively, run the `start.bat` script which will start both the client and the server, and open the browser to http://localhost:5173/.
 
-**If you want a complete working project, you can unzip the assembler-api-handler.zip file.**
+**If you need a fully working project, you can unzip assembler-api-handler.zip and paste your api key into the env file.**
